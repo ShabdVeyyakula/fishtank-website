@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="dashboardstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="dashboard.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 
 <body class="MainBody">
@@ -24,14 +27,136 @@
                 <div class="squares">
                     <div class="Column">
                         <h1>Welcome To FishTank</h1>
-                        <button class="buttons" onClick="location.href='http://corn-hub.blogspot.com'">Documentation</button>
+                        <button class="buttons" id="myBtn" onclick="test()">Add Video</button>
                     </div>
                 </div>
                 <div class="Grid">
+                  <div>
+                    <h1>New App for the Iphone 11</h1>
+                    <iframe width="1280" height="640" src="https://www.youtube.com/embed/nxf41fMX_Y4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p style="color: white; margin-top: -5px; width: 300px; height: 200px;">With the great Iphone 8, I was able to manufacture an amazing app.</p>
+                  </div>
+                  <div>
+                    <h1>Scrub Daddy</h1>
+                    <iframe width="1280" height="640" src="https://www.youtube.com/embed/k3PY_p_M-8w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    <p style="color: white; margin-top: -5px; width: 300px; height: 200px;">Scrub Daddy is a product that revolutionizes cleaning</p>
+                  </div>
+                  <div style="display: none" class="hidden">
+                    <h1>Jimmy Kimmels Cone</h1>
+                    <iframe width="1280" height="640" src="https://www.youtube.com/embed/wmenN7NEdBc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    <p style="color: white; margin-top: -5px; width: 300px; height: 200px;">The Conde was created to protect the lives of many children</p>
+                  </div>
+                  
                     
                 </div>
             </div>
         </div>
+
+        <script>
+          $(".upload").click(function() {
+            $(".hidden").show()
+
+          }
+          )
+        </script>
+ 
+        <style>
+            body {font-family: Arial, Helvetica, sans-serif;}
+            
+            /* The Modal (background) */
+            .modal {
+              display: none; /* Hidden by default */
+              position: fixed; /* Stay in place */
+              z-index: 1; /* Sit on top */
+              padding-top: 100px; /* Location of the box */
+              left: 0;
+              top: 0;
+              width: 100%; /* Full width */
+              height: 100%; /* Full height */
+              overflow: auto; /* Enable scroll if needed */
+              background-color: rgb(0,0,0); /* Fallback color */
+              background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+            
+            /* Modal Content */
+            .modal-content {
+              background-color: #fefefe00;
+              backdrop-filter: blur(30px);
+
+              margin: auto;
+              padding: 20px;
+              border: none;
+              width: 80%;
+            }
+            
+            /* The Close Button */
+            .close {
+              color: #aaaaaa;
+              float: right;
+              font-size: 28px;
+              font-weight: bold;
+            }
+            
+            .close:hover,
+            .close:focus {
+              color: #000;
+              text-decoration: none;
+              cursor: pointer;
+            }
+            </style>
+
+            
+            <div id="myModal" class="modal">
+            
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <ul style="list-style-type: none;">
+                    <h1>Upload Your Pitch!</h1>
+                
+                    <h1 style="font-size: 20px;">Title</h1>
+                    <li><input type="text"></li>
+                    <h1 style="font-size: 20px;">Description</h1>
+                    <li><input type="text"></li>
+                    <h1 style="font-size: 20px;">Tags</h1>
+                    <li><input type="text"></li>
+                    <h1 style="font-size: 20px;">Video Link(Drive)</h1>
+                    <li><input type="text"></li>
+                    <button class="upload">Upload</button>
+                </ul>
+              </div>
+            
+            </div>
+            
+            <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+            
+        
+        
 </body>
+
 
 </html>

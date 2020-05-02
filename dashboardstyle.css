@@ -81,11 +81,69 @@
   align-self: center;
   backdrop-filter: blur(30px);
   border-radius: 10px;
+  transition: background-color 0.5s ease-in-out, transform 0.3s ease-in-out;
+
 }
-.grid {
+.buttons:hover {
+  background-color: rgb(31, 30, 30);
+  transform: scale(1.1) perspective(1px);
+
+
+}
+.Grid {
     margin-top: 80px;
     margin-left: 30px;
     display: inline-grid;
     grid-template-columns: auto auto auto;
     padding: 10px;
   }
+
+
+input {
+  height: 50px;
+  width: 800px;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+h1 {
+  color: white;
+  margin-left: 190px;
+}
+
+p{
+  margin-left: 190px;
+}
+
+.upload {
+  margin-top: 50px;
+  width: 200px;
+  height: 50px;
+  border: none;
+  background-color: #31313179;
+  color: white;
+  backdrop-filter: blur(10px);
+  border-radius: 4px;
+  transition: background-color 0.5s ease-in-out, transform 0.3s ease-in-out;
+
+
+
+}
+
+.upload:hover {
+  cursor: pointer;
+  background-color: #49bfff;
+  transform: scale(1.1) perspective(1px);
+
+
+
+
+}
+
+iframe {
+  height: 300px;
+  width: 350px;
+  margin-left: 170px;
+  border: none;
+}
+
