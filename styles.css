@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-image: url(./images/Black_and_White_Oil_Painting_Abstract_Art_4K_Wallpaper.jpg);
+  }
+  
+  .topnav {
+    overflow: hidden;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    backdrop-filter: blur(30px);
+    border-bottom: 1px solid #181818;
+    border: none; 
+    height: 70px;
+  
+  }
+  
+  .title1 {
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    position: absolute;
+    top: -4px;
+  }
+  .title2 {
+      color: #A59595;
+      font-weight: 100;
+
+  }
+  
+  .nav-items {
+    display: flex;
+  }
+  
+  .item {
+    display: inline;
+    padding-left: 10px;
+  }
+
+.title {
+    color: white;
+    padding-top: 200px;
+    font-size: 100px;
+
+  }
+
+.steps {
+    color: white;
+    font-size: 55px;
+    position: absolute;
+    left: 30px;
+    margin-top: 80px;
+
+}
+
+.steps2 {
+    color: black;
+    font-size: 55px;
+    position: absolute;
+    left: 30px;
+    margin-top: 80px;
+
+}
+
+.p{
+    align-items: center;
+    text-align: center;
+    line-height: 2 ;
+
+      
+  }
+  ul{
+      list-style-type: none;
+  }
+  button {
+      margin-top: 30px;
+      background-color:rgba(46,46,46,0.2);; 
+      color: white; 
+      height: 37px; 
+      width: 130px; font-size: 13; 
+      border-radius: 5px; 
+      backdrop-filter: blur(40px);
+      opacity: 90%;
+      border: white;
+      transition: background-color 0.5s ease-in-out;
+
+
+
+  }
+  button:hover {
+      cursor: pointer;
+      background-color:rgba(8, 150, 185, 0.747);
+
+  }
+
+  .blackbox {
+      margin-top: 500px;
+      height: 1200px;
+      width: 100%;
+      background-color: black;
+  }
+
+  .grid {
+    margin-top: 80px;
+    margin-left: 30px;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+
+  .feature{
+      margin-top: 70px;
+  }
