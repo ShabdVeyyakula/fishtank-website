@@ -7,12 +7,44 @@
     <meta name="description" content="">
     <link rel="stylesheet" href="loginstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
 </head>
 
 <body>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDduqr21MChu6QmxZMdKi_I6pKFzTJbJc8",
+    authDomain: "fishtankmobile-2bb10.firebaseapp.com",
+    databaseURL: "https://fishtankmobile-2bb10.firebaseio.com",
+    projectId: "fishtankmobile-2bb10",
+    storageBucket: "fishtankmobile-2bb10.appspot.com",
+    messagingSenderId: "453758494548",
+    appId: "1:453758494548:web:976dd82e887833e68e4ac1",
+    measurementId: "G-8JE4HGE6FD"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-firestore.js"></script>
+
+
     <div class="row">
         <div class="LeftSide">
-            <h1 class="FishTank">FishTank</h1>
+            <a href="index.html">            <h1 class="FishTank">FishTank</h1>
+            </a>
             <h1 class="SignIn">Sign In</h1>
             <h1 class="Email">Email</h1>
             <h1 class="Password">Password</h1>
@@ -22,7 +54,7 @@
             </form>
             <h1 class="Forgot">Forgot Password?</h1>
             <div id="buttonwrapper">
-                <button class="button button5" onClick="location.href='http://corn-hub.blogspot.com'">Sign In</button>
+                <button class="button button5" onClick="location.href=''" id= "btnLogin">Sign In</button>
             </div>
         </div>
         <div class="RightSide">
@@ -30,7 +62,7 @@
                 <h1 class="Title">“The new way to get your ideas heard”</h1>
                 <h2 class="Body">- Fish Tank dev</h2>
                 <div id="buttonswrapper">
-                    <button class="buttons" onClick="location.href='http://corn-hub.blogspot.com'">Register</button>
+                    <button class="buttons" onClick="location.href=''" id= "btnSignUp">Register</button>
                 </div>
             </div>
         </div>
