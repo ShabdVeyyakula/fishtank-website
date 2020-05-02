@@ -1,0 +1,220 @@
+body {
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  height: 100vh;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.LeftSide {
+  width: 40%;
+  min-height: 100%;
+  color: white;
+  position: relative;
+}
+
+.RightSide {
+  object-fit: cover;
+  width: 60%;
+  min-height: 100vh;
+  position: relative;
+  background-image: url("https://images.wallpaperscraft.com/image/stains_liquid_abstraction_151964_3840x2160.jpg");
+  color: white;
+}
+.Textclass {
+  min-height: 100vh;
+  display: flex;
+  justify-content: left;
+  backdrop-filter: blur(10px);
+}
+.Title {
+  position: absolute;
+  width: 410px;
+  height: 28px;
+  left: 76px;
+  top: 344px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+.Body {
+  position: absolute;
+  width: 410px;
+  height: 68px;
+  left: 76px;
+  top: 344px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+.FishTank {
+  position: absolute;
+  width: 101px;
+  height: 28px;
+  left: 18px;
+  top: 14px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+.SignIn {
+  position: absolute;
+  width: 148px;
+  height: 56px;
+  left: 62px;
+  top: 213px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #ffffff;
+}
+.Email {
+  position: absolute;
+  width: 60px;
+  height: 28px;
+  left: 62px;
+  top: 310px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+.Password {
+  position: absolute;
+  width: 107px;
+  height: 28px;
+  left: 62px;
+  top: 415px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+.button {
+  background-color: #1c1c1c; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: center;
+}
+#buttonwrapper {
+  position: absolute;
+  left: 65px;
+  top: 561px;
+}
+.EmailEntry {
+  width: 633px;
+  height: 44px;
+
+  position: absolute;
+  left: 62px;
+  top: 359px;
+}
+.PasswordEntry {
+  position: absolute;
+  width: 633px;
+  height: 44px;
+  left: 62px;
+  top: 464px;
+}
+.Forgot {
+  position: absolute;
+  width: 114px;
+  height: 46px;
+  left: 62px;
+  top: 498px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+.EntryRegister {
+  margin-top: 10px;
+}
+input[type="text"] {
+  border: 2px solid gray;
+  color: white;
+  padding-left: 10px;
+  font-size: large;
+  background-color: black;
+  border-radius: 4px;
+}
+.buttons {
+    background-color: black;
+    opacity: 0.8;  
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: center;
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+}
+#buttonswrapper {
+  position: absolute;
+  left: 65px;
+  top: 851px;
+}
