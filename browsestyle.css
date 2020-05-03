@@ -21,12 +21,9 @@ body{
   color: #3a3a3a;
 }
 .Title {
-  position: fixed;
   width: 370px;
   height: 113px;
-  left: 101px;
-  top: 0px;
-
+  margin-left: 100px;  
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
