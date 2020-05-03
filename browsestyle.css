@@ -45,6 +45,12 @@ body{
   align-items: center;
   justify-content: center;
   display: flex;
+
+  
+  min-width: 1920px;
+  min-height: 1080px;
+  max-width: 1920px;
+  max-height: 1080px;
 }
 .Video {
   position: relative;
