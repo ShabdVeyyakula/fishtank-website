@@ -78,3 +78,26 @@ body{
   position: relative;
   top: 1160px;
 }
+
+.topnav {
+  overflow: hidden;
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  backdrop-filter: blur(30px);
+  border-bottom: 1px solid #181818;
+  border: none; 
+  height: 70px;
+
+}
+
+.title1 {
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  position: absolute;
+  top: -4px;
+}
+.title2 {
+    color: #A59595;
+    font-weight: 100;
+
+}
